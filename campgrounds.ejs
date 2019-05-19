@@ -1,0 +1,41 @@
+<% include partials/header %>
+
+
+
+
+	
+
+
+
+<div class="container">
+    <div class="jumbotron">
+       <h1> WELCOME TO MY PAGE </h1>
+       <p>Here is my collection </p>
+        <p>
+            <a class="btn btn-primary btn-large" href="/nextpage/create"> Add more </a>
+       </p>
+    </div>
+      
+    
+          
+
+   <div class="row">
+
+                <% for(var i=0; i< variable.length; i++) { %>
+                <div class="col-md-3 col-sm-6"> 
+
+
+		      <div class="thumbnail">
+	            <img src="<%= variable[i].image %> ">
+	            <div class="caption">
+	            <h4> <%= variable[i].name %> </h4>
+	            </div>
+	            </div>
+	            </div>
+	             <% }; %>
+	     
+      
+    </div>
+</div>
+
+<% include partials/footer %>
